@@ -1,0 +1,48 @@
+en:
+  vagrant_vrealize:
+    config:
+      host_required: |-
+        A host URL must be passed in to know where to access the API! Try
+        something like hostname.domainname.com and make sure you can access
+        the web portal URL
+      username_required: |-
+        A username is required to access the API
+      catalog_item_name_required: |-
+        A catalog item is required or we won't know what to request
+
+    errors:
+      rest_client_error: |-
+        There was an error talking to vRealize API. The error message is shown
+        below:
+
+        %{message}
+
+
+    states:
+      short_not_created: |-
+        not created
+      long_not_created: |-
+        The instance is not created. Run `vagrant up` to create it.
+
+      short_stopped: |-
+        stopped
+      long_stopped: |-
+        The instance is stopped. Run `vagrant up` to start it.
+
+      short_stopping: |-
+        stopping
+      long_stopping: |-
+        The instance is stopping. Wait until is completely stopped to
+        run `vagrant up` and start it.
+
+      short_running: |-
+        running
+      long_running: |-
+        The instance is running. To stop this machine, you can run
+        `vagrant halt`. To destroy the machine, you can run `vagrant destroy`.
+
+      short_pending: |-
+        pending
+      long_pending: |-
+        The instance is still being initialized. To destroy this machine,
+        you can run `vagrant destroy`.
